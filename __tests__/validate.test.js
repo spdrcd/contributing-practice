@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 describe("Validate the participant data", () => {
-  test("Validate file names", () => {
+  test("File names are valid", () => {
     fs.readdirSync(path.join(path.dirname(__dirname), "participants")).forEach(
       (file) => {
         expect(file).toMatch(/^[a-zà-ÿ-]+\.md$/);
