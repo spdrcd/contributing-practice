@@ -1,12 +1,13 @@
 {
   "scripts": {
     "dev": "yarn install --frozen-lockfile",
-    "test": "echo 'This project does not contain automated tests'",
-    "lint": "prettier --check '**/*.{json,md}'",
-    "format": "prettier --write '**/*.{json,md}'",
+    "test": "jest --verbose --colors",
+    "lint": "prettier --check '**/*.{js,json,md}'",
+    "format": "prettier --write '**/*.{js,json,md}'",
     "clean": "git clean -X -d --force && find . -type d -empty -delete"
   },
   "devDependencies": {
+    "jest": "^29.3.1",
     "prettier": "~2.8.1"
   }
 }
